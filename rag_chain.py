@@ -23,7 +23,7 @@ def build_chain():
     )
 
     retriever = vectordb.as_retriever(
-        search_kwargs={"k": 3}  # fetch top 3 relevant chunks
+        search_kwargs={"k": 10}  # fetch top 3 relevant chunks
     )
 
     llm = ChatGroq(

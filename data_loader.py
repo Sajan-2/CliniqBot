@@ -16,7 +16,7 @@ def load_documents(data_folder="data/"):
 
 def split_documents(docs):
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
-        chunk_overlap=50
+        chunk_size=1000,
+        chunk_overlap=100
     )
     return splitter.split_documents(docs)
